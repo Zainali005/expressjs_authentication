@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="login-form">
+        <h2>Login Form</h2>
+        <form action="/login" method="post">
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Login</button>
+            <br/>
+        </form>
+        <button onclick="handleRegister()">Register</button>
+    </main>
+    <script>
+        const handleRegister = () => {
+            window.location.href = '/register'; 
+        }
+    </script>
+</body>
+</html>
